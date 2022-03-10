@@ -4,8 +4,7 @@
 
 <script>
 	import { onMount } from 'svelte';
-	import { tweened } from 'svelte/motion';
-	import { cubicOut } from 'svelte/easing';
+	import Subject from '$lib/subject/index.svelte';
 	const translate = { x: 0, y: 0 };
 
 	const platforms = [
@@ -71,10 +70,64 @@
 		}
 	];
 
+	const infos = [
+		{
+			title: '金融级传输专线',
+			subtitle: '电竞级标准，游戏稳定有保障',
+			color: '#dd65ff1a',
+			icon: {
+				x: '/static/img/index/data-1.png',
+				xx: '/static/img/index/data-1@2x.png'
+			},
+			size: {
+				with: 105,
+				height: 132
+			}
+		},
+		{
+			title: '全球节点覆盖',
+			subtitle: '全球覆盖，AI智能选择节点更轻松',
+			color: '#23f3ad26',
+			icon: {
+				x: '/static/img/index/data-2.png',
+				xx: '/static/img/index/data-2@2x.png'
+			},
+			size: {
+				with: 105,
+				height: 132
+			}
+		},
+		{
+			title: '支持更多游戏',
+			subtitle: '千款热门游戏，全平台覆盖',
+			color: '#1e5bfa1a',
+			icon: {
+				x: '/static/img/index/data-3.png',
+				xx: '/static/img/index/data-3@2x.png'
+			},
+			size: {
+				with: 105,
+				height: 132
+			}
+		},
+		{
+			title: '免费试用',
+			subtitle: '独家自研Cellular matrix服务器',
+			color: '#fff34833',
+			icon: {
+				x: '/static/img/index/data-4.png',
+				xx: '/static/img/index/data-4@2x.png'
+			},
+			size: {
+				with: 105,
+				height: 132
+			}
+		}
+	];
+
 	const mousemove = e => {
 		translate.x = (window.screen.availWidth - e.clientX) / 20;
 		translate.y = (window.screen.availWidth - e.clientY) / 20;
-		console.log(translate);
 	};
 
 	onMount(() => {
@@ -144,15 +197,54 @@
 	<div class="block py-4">
 		<div class="title flex items-center justify-center">
 			<img
-				src="/static/img/index/title-2.png"
-				srcset="/static/img/index/title-2@2x.png 2x"
-				alt="加速稳定 超低延迟"
+				src="/static/img/index/title.png"
+				srcset="/static/img/index/title@2x.png 2x"
+				alt="千款游戏 全平台覆盖"
 				width="443"
 				height="60"
 			/>
 		</div>
-		<div class="subtitle text-center mt-4">
+		<div class="subtitle text-center my-4">
 			PC端/移动端热门游戏，新游超快适配
+		</div>
+
+		<Subject />
+	</div>
+</section>
+
+<section class="info-block bg-white flex flex-col items-center">
+	<div class="block py-4">
+		<div class="title flex items-center justify-center">
+			<img
+				src="/static/img/index/title-2"
+				srcset="/static/img/index/title-2@2x.png"
+				alt="加速稳定 超低延迟"
+				width="397"
+				height="60"
+			/>
+		</div>
+		<div class="flex items-center justify-center my-4">
+			<a class="download-btn" href="/download.html">
+				<img src="/img/download.svg" alt="免费下载" class="icon" width="27" />
+				免费下载
+			</a>
+		</div>
+
+		<div class="infos flex items-center justify-between my-4">
+			{#each infos as info}
+				<div class="info flex flex-col items-center">
+					<div
+						class="info-cover relative flex items-center justify-center"
+						style="color: {info.color};"
+					>
+						<img src={info.icon.x} alt={info.title} />
+					</div>
+					<div class="info-content">
+						<div class="title text-center text-xl">{info.title}</div>
+						<div class="subtitle text-center text-sm mt-4">{info.subtitle}</div>
+					</div>
+				</div>
+			{/each}
 		</div>
 	</div>
 </section>
@@ -160,6 +252,10 @@
 <style lang="scss" scoped>
 	section {
 		width: 100%;
+
+		&:last-of-type {
+			padding-bottom: 100px;
+		}
 	}
 	.jumbotron {
 		width: 1200px;
@@ -239,6 +335,36 @@
 
 		.subtitle {
 			color: #999;
+		}
+	}
+
+	.info-block {
+		.block {
+			width: 1200px;
+		}
+
+		.info {
+			&-cover {
+				width: 150px;
+				height: 150px;
+				img {
+					z-index: 1;
+				}
+
+				&::after {
+					content: '';
+					position: absolute;
+					width: 155px;
+					height: 155px;
+					background-color: currentColor;
+					border-radius: 50%;
+					bottom: -40px;
+				}
+			}
+
+			&-content {
+				margin-top: 80px;
+			}
 		}
 	}
 

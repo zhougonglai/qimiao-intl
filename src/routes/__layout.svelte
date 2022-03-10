@@ -1,10 +1,8 @@
 <script>
-	import Header from '$lib/header/index.svelte';
 	import { page } from '$app/stores';
 	import '../app.scss';
-	import { onMount } from 'svelte';
-
-	onMount(() => {});
+	import Header from '$lib/header/index.svelte';
+	import Footer from '$lib/footer/index.svelte';
 </script>
 
 <Header />
@@ -15,3 +13,5 @@
 >
 	<slot />
 </main>
+
+<Footer />

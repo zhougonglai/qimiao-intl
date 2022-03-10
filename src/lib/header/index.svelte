@@ -4,7 +4,7 @@
 
 <header class="absolute inset-x-0 top-0 flex justify-center" role="heading">
 	<div class="header-block w-full">
-		<nav role="navigation" class="inline-flex items-center">
+		<nav class="inline-flex items-center">
 			<div id="logo" class="flex justify-center items-center">
 				<img
 					width="133"
