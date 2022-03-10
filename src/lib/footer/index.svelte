@@ -57,7 +57,7 @@
 					class="ml-4 flex items-center justify-center"
 				>
 					<img
-						src="/static/img/footer-gonganbeian.png"
+						src="/img/footer-gonganbeian.png"
 						width="20"
 						alt="公安备案"
 						class="inline mr-2"
@@ -97,7 +97,7 @@
 					one-link-mark="yes"
 				>
 					<img
-						src="https://static.anquan.org/static/outer/image/aqkx_124x47.png"
+						src="https:/.anquan.org/outer/image/aqkx_124x47.png"
 						alt="全国安全可信网站"
 					/>
 				</a>

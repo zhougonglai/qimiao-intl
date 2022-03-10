@@ -59,7 +59,7 @@
 		{
 			title: '主机加速',
 			url: {
-				x: '/img/index/pc.png',
+				x: '/img/index/pc@1x.png',
 				xx: '/img/index/pc@2x.png'
 			},
 			size: {
@@ -76,8 +76,8 @@
 			subtitle: '电竞级标准，游戏稳定有保障',
 			color: '#dd65ff1a',
 			icon: {
-				x: '/static/img/index/data-1.png',
-				xx: '/static/img/index/data-1@2x.png'
+				x: '/img/index/data-1.png',
+				xx: '/img/index/data-1@2x.png'
 			},
 			size: {
 				with: 105,
@@ -89,8 +89,8 @@
 			subtitle: '全球覆盖，AI智能选择节点更轻松',
 			color: '#23f3ad26',
 			icon: {
-				x: '/static/img/index/data-2.png',
-				xx: '/static/img/index/data-2@2x.png'
+				x: '/img/index/data-2.png',
+				xx: '/img/index/data-2@2x.png'
 			},
 			size: {
 				with: 105,
@@ -102,8 +102,8 @@
 			subtitle: '千款热门游戏，全平台覆盖',
 			color: '#1e5bfa1a',
 			icon: {
-				x: '/static/img/index/data-3.png',
-				xx: '/static/img/index/data-3@2x.png'
+				x: '/img/index/data-3.png',
+				xx: '/img/index/data-3@2x.png'
 			},
 			size: {
 				with: 105,
@@ -115,8 +115,8 @@
 			subtitle: '独家自研Cellular matrix服务器',
 			color: '#fff34833',
 			icon: {
-				x: '/static/img/index/data-4.png',
-				xx: '/static/img/index/data-4@2x.png'
+				x: '/img/index/data-4.png',
+				xx: '/img/index/data-4@2x.png'
 			},
 			size: {
 				with: 105,
@@ -184,8 +184,8 @@
 
 	<img
 		class="data-bg"
-		src="/static/img/index/bg-data@1x.png"
-		srcset="/static/img/index/bg-data@2x.png 2x"
+		src="/img/index/bg-data@1x.png"
+		srcset="/img/index/bg-data@2x.png 2x"
 		alt="网游加速器"
 		width="899"
 		height="548"
@@ -197,8 +197,8 @@
 	<div class="block py-4">
 		<div class="title flex items-center justify-center">
 			<img
-				src="/static/img/index/title.png"
-				srcset="/static/img/index/title@2x.png 2x"
+				src="/img/index/title.png"
+				srcset="/img/index/title@2x.png 2x"
 				alt="千款游戏 全平台覆盖"
 				width="443"
 				height="60"
@@ -216,8 +216,8 @@
 	<div class="block py-4">
 		<div class="title flex items-center justify-center">
 			<img
-				src="/static/img/index/title-2"
-				srcset="/static/img/index/title-2@2x.png"
+				src="/img/index/title-2.png"
+				srcset="/img/index/title-2@2x.png"
 				alt="加速稳定 超低延迟"
 				width="397"
 				height="60"
